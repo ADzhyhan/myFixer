@@ -1,0 +1,20 @@
+{% set title = 'Password recovery' %}
+{% set question = 'Back to' %}
+{% set nameLink = 'Sign in' %}
+{% extends 'base.html' %}
+
+{% block content %}
+
+<main class="content">
+  <div class="content__wrapper">
+    <form action="#" class="form si-form">
+      <div class="si-form__content">
+        <h2 class="si-form__title">Enter your e-mail to reset your password</h2>
+        <input type="text" class="form__input" placeholder="E-mail" />
+        <button class="btn">Send</button>
+      </div>
+    </form>
+  </div>
+</main>
+
+{% endblock %}
