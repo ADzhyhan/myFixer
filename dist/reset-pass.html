@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Main</title>
+  <title>Password reset</title>
 
   <link rel="stylesheet" href="css/main.css" />
 </head>
@@ -18,21 +18,24 @@
         <img class="logo__link" src="../img/logo.svg" alt="myFixer logo" />
       </a>
       <p class="header__text">
-        
-        <a class="header__signup-link" href="#"></a>
+        Do not have an account?
+        <a class="header__signup-link" href="#">Sign up</a>
       </p>
     </div>
   </div>
 </header> 
 
 <main class="content">
-  <ul>
-    <li><a href="sign-in.html">Sign-In</a></li>
-    <li><a href="pass-recovery.html">Password recovery</a></li>
-    <li><a href="ready.html">Ready</a></li>
-    <li><a href="reset-pass.html">Reset password</a></li>
-    <li></li>
-  </ul>
+  <div class="content__wrapper">
+    <form action="#" class="form si-form">
+      <div class="si-form__content">
+        <h2 class="si-form__title">Reset your password</h2>
+        <input type="password" class="form__input" placeholder="New password" />
+        <input type="password" class="form__input" placeholder="Confirm password" />
+        <button class="btn btn_down">Reset</button>
+      </div>
+    </form>
+  </div>
 </main>
 
 
