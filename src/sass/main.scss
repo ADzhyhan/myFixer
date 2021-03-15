@@ -34,18 +34,18 @@ body {
   box-shadow: 0px 5px 40px rgba(0, 45, 113, 0.06);
 }
 
-.si-form {
+.set-form {
   width: 632px;
   padding: 72px 116px 80px;
 }
 
-.si-form__content {
+.form__content {
   display: flex;
   justify-content: flex-end;
   flex-wrap: wrap;
   justify-content: space-between;
 
-  .si-form__title {
+  .form__title {
     width: 100%;
     font-family: 'Exo 2';
     font-size: 28px;
@@ -57,6 +57,14 @@ body {
     color: #002396;
   }
 
+  .names {
+    display: flex;
+    .pdng {
+      margin-right: 20px;
+    }
+    
+  }
+  
   .form__input {
     height: 40px;
     width: 100%;
@@ -65,11 +73,12 @@ body {
     background: #fcfcfc;
     border: 2px solid #f2f2f2;
     border-radius: 2px;
-    font-size: 18px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 40px;
-    text-align: left;
+    line-height: 16px;
+    text-align: left; 
+    letter-spacing: 0.28px;
     color: #222428;
 
     &:focus {
@@ -77,7 +86,6 @@ body {
       border-left: 2px solid #2a74db; 
       background: #FFFFFF;
       box-shadow: 0px 5px 20px rgba(0, 45, 113, 0.06);
-      border-radius: 5px;
     }
 
     &::placeholder {
