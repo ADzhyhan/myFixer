@@ -24,6 +24,7 @@ body {
   display: flex;
   box-sizing: border-box;
   min-height: 80vh;
+  
 }
 
 .form {
@@ -137,3 +138,4 @@ body {
 @import 'header';
 @import 'sign-in';
 @import 'normalize';
+@import 'ready';
