@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up</title>
+
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <header class="header">
+  <div class="content">
+    <div class="header__inner">
+      <a class="logo" href="#">
+        <img class="logo__link" src="../img/logo.svg" alt="myFixer logo" />
+      </a>
+      <p class="header__text">
+        Already have an account?
+        <a class="header__signup-link" href="#">Log In</a>
+      </p>
+    </div>
+  </div>
+</header> 
+
+<main class="content">
+  <div class="content__wrapper">
+    <form action="#" class="form set-form">
+      <div class="form__content">
+        <h2 class="form__title title-color">Complete your account</h2>
+        <input type="password" class="form__input" placeholder="Create a password" />
+        <input type="password" class="form__input" placeholder="Confirm password" />
+
+        <div class="agrees">
+          <div class="agrees__item mb-15">
+            <input type="checkbox" class="agrees__checkbox" id="terms" name="terms" checked />
+            <label class="agrees__label" for="terms">
+              I agree to the myFixer.com
+              <a class="agrees__link" href="#">Terms of Service</a>
+            </label>
+          </div>
+
+          <div class="agrees__item">
+            <input type="checkbox" class="agrees__checkbox" id="policy" name="policy" />
+            <label class="agrees__label" for="policy">
+              I agree to the myFixer.com
+              <a class="agrees__link" href="#">Privacy Policy</a>
+            </label>
+          </div>
+
+        </div>
+        <div class="g-recaptcha" data-sitekey="6LcpFYIaAAAAAAjHXMNpcMMZ8ix0mZwjfVTeGL8Z"></div>
+        <button class="btn btn_down">Done!</button>
+      </div>
+    </form>
+  </div>
+</main>
+
+<script src="https://www.google.com/recaptcha/api.js?hl=en"></script>
+
+</body>
+
+</html>

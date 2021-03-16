@@ -57,6 +57,10 @@ body {
     color: #002396;
   }
 
+  .title-color {
+    color: rgba(1,19,78,1);
+  }
+
   .names {
     display: flex;
     .pdng {
@@ -73,10 +77,10 @@ body {
     background: #fcfcfc;
     border: 2px solid #f2f2f2;
     border-radius: 2px;
-    font-size: 14px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    line-height: 16px;
+    line-height: 40px;
     text-align: left; 
     letter-spacing: 0.28px;
     color: #222428;
@@ -117,6 +121,88 @@ body {
     }
   }
 
+  .mb-15 {
+    margin-bottom: 15px;
+  }
+
+  .agrees {
+    margin-top: 23px;
+
+    .agrees__item {
+      position: relative;
+
+      .agrees__checkbox {
+        display: none;
+      }
+
+      .agrees__checkbox + .agrees__label  {
+        display: block; 
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 20px;
+        letter-spacing: 0.28px;
+        line-height: 16px;
+        font-weight: 300;
+        color: #222428;
+        
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none; 
+        
+      }
+
+      .agrees__checkbox + .agrees__label:last-child {
+        margin-bottom: 0;
+      }
+
+      .agrees__checkbox + .agrees__label::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 20px;
+        border: 2px solid #F2F2F2;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: .6;
+        -webkit-transition: all .12s, border-color .08s;
+        transition: all .12s, border-color .08s;
+        
+      }
+
+      .agrees__checkbox:checked + .agrees__label::before {
+        width: 10px;
+        top: -5px;
+        left: 5px;
+        border-radius: 0;
+        border: 2px solid #0AD69C;
+        opacity: 1;
+        border-top-color: transparent;
+        border-left-color: transparent;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+
+      .agrees__link {
+        text-decoration: none;
+      }
+
+    }
+    
+  }
+
+  .g-recaptcha {
+    margin-top: 25px;
+    margin-bottom: -25px;
+    transform: scale(0.692);
+    transform-origin: 0;
+    -webkit-transform: scale(0.692);
+    transform: scale(0.692);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+  }
+
   .btn {
     width: 188px;
     height: 43px;
@@ -141,7 +227,6 @@ body {
     margin-top: 40px;
   }
 }
-
 
 @import 'header';
 @import 'sign-in';
