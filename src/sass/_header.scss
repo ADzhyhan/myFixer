@@ -3,24 +3,24 @@
 }
 
 .header__text {
-  font-family: Roboto;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.28px;
   color: #222428;
+  font-family: Roboto;
+  font-size: 16px;
   font-style: normal;
+  font-weight: 300;
+  letter-spacing: 0.28px;
+  line-height: 19px;
 
   .header__signup-link {
-    text-decoration: none;
-    font-weight: 700;
     color: #062fb3;
+    font-weight: 700;
+    text-decoration: none;
   }
 }
 
 .logo {
-  height: 36px;
   width: 138px;
+  height: 36px;
 
   .logo__link {
     width: 100%;
@@ -28,8 +28,8 @@
 }
 
 .header__inner {
-  height: 75px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  height: 75px;
 }

@@ -10,7 +10,14 @@
     <form action="#" class="form set-form">
       <div class="form__content">
         <h2 class="form__title title-color">Complete your account</h2>
-        <input type="password" class="form__input" placeholder="Create a password" />
+        <input type="password" class="form__input mrgn" placeholder="Create a password" />
+
+        <div class="form__indicator-password">
+          <span class="weak"></span>
+          <span class="medium"></span>
+          <span class="strong"></span>
+        </div>
+
         <input type="password" class="form__input" placeholder="Confirm password" />
 
         <div class="agrees">
@@ -31,7 +38,9 @@
           </div>
 
         </div>
+
         <div class="g-recaptcha" data-sitekey="6LcpFYIaAAAAAAjHXMNpcMMZ8ix0mZwjfVTeGL8Z"></div>
+
         <button class="btn btn_down">Done!</button>
       </div>
     </form>
