@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile</title>
+
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+
+  <header class="header profile-header">
+    <div class="content">
+      <div class="header__inner">
+
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__items">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="/'">Home</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link link_active" href="#">My profile</a>
+            </li>
+          </ul>
+        </div>
+
+        <select>
+          <option>Faruh Bernandez</option>
+          <option>Logout</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <aside class="sidebar">
+    <div class="sidebar__wrapper">
+
+      <div class="logo sidebar__logo">
+        <img src="../img/side-logo.svg" alt="myFixer" class="logo__image">
+      </div>
+
+      <nav class="sidebar__menu">
+        <div class="sidebar__menu-item">
+          <a href="#">
+            <img src="../img/search-icon.svg" alt="search">
+          </a>
+        </div>
+
+        <div class="sidebar__menu-item sidebar__menu-item_active">
+          <a href="#">
+            <img src="../img/user-icon_active.svg" alt="user-profile">
+          </a>
+        </div>
+
+        <div class="sidebar__menu-item">
+          <a href="#">
+            <img src="../img/messages-icon.svg" alt="messages">
+          </a>
+        </div>
+
+        <div class="sidebar__menu-item">
+          <a href="#">
+            <img src="../img/calendar-icon.svg" alt="calendar">
+          </a>
+        </div>
+
+      </nav>
+    </div>
+  </aside>
+
+  <main class="content">
+    <div class="content__wrapper">
+      <section class="user-information">
+        <div class="user-information__card">
+
+          <div class="card__titles">
+            <a class="card__title card__title_active" href="#">PERSONAL INFORMATION</a>
+            <a class="card__title" href="#">ACCOUNT INFORMATION</a>
+          </div>
+
+          <div class="card__information">
+
+            <div class="profile-photo">
+              <div class="profile-photo__image">
+                <img src="../img/profile-photo.svg" alt="profile photo">
+              </div>
+
+              <div class="profile-photo__change-image">
+                <img src="../img/pen.svg" alt="pen">
+                <a href="#" class="change-image__link">Change photo</a>
+              </div>
+            </div>
+
+            <div class="user-data">
+
+              <div class="user-data__item">
+                <h3 class="item__title">FIRST NAME</h3>
+                <input class="item__input" type="text" name="first name" value="Faruh">
+              </div>
+
+              <div class="user-data__item">
+                <h3 class="item__title">LAST NAME</h3>
+                <input class="item__input" type="text" name="last name" value="Bernandez">
+              </div>
+
+              <div class="user-data__item">
+                <h3 class="item__title">TITLE</h3>
+                <!-- <div class="item__select" tabindex="1"> -->
+                <select class="item__select" name="select gender">
+                  <option>Mr</option>
+                  <option>Mrs</option>
+                </select>
+                <!-- </div> -->
+              </div>
+
+              <div class="user-data__item">
+                <h3 class="item__title">MOBILE PHONE</h3>
+                <div class="item__phone">
+                  <select class="item__select item__select-mobile">
+                    <option></option>
+                    <option></option>
+                  </select>
+                  <input class="item__input" type="text" name="phone" value="+65">
+                </div>
+              </div>
+
+              <div class="user-data__item">
+                <h3 class="item__title">COUNTRY</h3>
+                <!-- <div class="item__select" tabindex="1"> -->
+                <select class="item__select item__select-icon">
+                  <option value=""></option>
+                  <option value="Turkey">Turkey</option>
+                  <option value="Ukraine">Ukraine</option>
+                </select>
+                <!-- </div> -->
+              </div>
+
+              <div class="user-data__item">
+                <h3 class="item__title">COMPANY</h3>
+                <input type="text" name="company" class="item__input">
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>
