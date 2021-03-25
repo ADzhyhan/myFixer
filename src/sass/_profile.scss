@@ -75,13 +75,14 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        padding-top: 50px;
-
+        
+        padding-top: 50px; 
+        
         &__item {
           width: 280px;
           padding-bottom: 30px;
         }
-
+        
         .item__title {
           font-style: normal;
           font-weight: 500;
@@ -149,6 +150,42 @@
         .item__phone {
           display: flex;
         }
+
+        .item__link {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 14px;
+          letter-spacing: 0.28px;
+          
+          transition: all .3s;
+          color: #01134E;
+          text-decoration: none;
+
+          &-vector {
+            padding-left: 5px;
+          }
+
+          &:hover {
+            color: #2A74DB;
+          }
+        }
+
+      }
+
+      .user-data__item-block {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+      }
+
+      .user-data__item-flexend {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0; 
+        padding-top: 10px;
       }
     }
   }
