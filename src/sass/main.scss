@@ -230,31 +230,35 @@ body {
     -webkit-transform-origin: 0 0;
   }
 
-  .btn {
-    width: 188px;
-    height: 43px;
-    margin-left: auto;
-    border: 0;
-    border-radius: 2px;
-    background: #0ad69c;
-    color: #fff;
-    font-family: 'Exo 2';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    letter-spacing: 0.4px;
-    line-height: 19px;
-    cursor: pointer;
-    &:hover {
-      background: #0aa87b;
-    }
-  }
+}
 
-  .btn_down {
-    margin-top: 40px;
+.btn_down {
+  margin-top: 40px;
+}
+
+.btn {
+  width: 188px;
+  height: 43px;
+  margin-left: auto;
+  border: 0;
+  border-radius: 2px;
+  background: #0ad69c;
+  color: #fff;
+  font-family: 'Exo 2';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  line-height: 19px;
+  cursor: pointer;
+  &:hover {
+    background: #0aa87b;
   }
 }
 
+.df{
+  display: flex;
+}
 @import 'header';
 @import 'sign-in';
 @import 'normalize';
