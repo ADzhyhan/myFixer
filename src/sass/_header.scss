@@ -52,6 +52,14 @@ select {
   align-items: center;
   justify-content: space-between;
   height: 61px;
+
+  .user-list {
+    display: flex;
+  
+    &__img {
+      padding-right: 9px;
+    }
+  }
 }
 
 
