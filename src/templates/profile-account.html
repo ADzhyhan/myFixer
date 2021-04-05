@@ -1,114 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
+{% set breadcrumbs__item1 = 'Home' %}
+{% set breadcrumbs__item2 = 'My profile' %}
+{% set status2 =  'sidebar__menu-item_active' %}
+{% set title = 'Profile' %}
+{% set srcImgSearch = '../img/search-icon.svg' %}
+{% set srcImgUser = '../img/user-icon_active.svg' %}
+{% extends 'prof-base.html' %}
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Profile</title>
+{% block content %}
+<main class="content">
+  <div class="content__wrapper">
+    <section class="container">
+      <div class="container__card">
 
-  <link rel="stylesheet" href="css/main.css" />
-</head>
-
-<body>
-
-  <header class="header profile-header">
-    <div class="content">
-      <div class="header__inner">
-
-        <div class="breadcrumbs">
-          <ul class="breadcrumbs__items">
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="/'">Home</a>
-            </li>
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link link_active" href="#">My profile</a>
-            </li>
-          </ul>
+        <div class="card__titles">
+          <a class="card__title" href="profile-personal.html">PERSONAL INFORMATION</a>
+          <a class="card__title card__title_active" href="#">ACCOUNT INFORMATION</a>
         </div>
 
-        <select>
-          <option>Faruh Bernandez</option>
-          <option>Logout</option>
-        </select>
-      </div>
-    </div>
-  </header>
+        <div class="card__information">
 
-  <aside class="sidebar">
-    <div class="sidebar__wrapper">
+          <div class="user-data">
 
-      <div class="logo sidebar__logo">
-        <img src="../img/side-logo.svg" alt="myFixer" class="logo__image">
-      </div>
-
-      <nav class="sidebar__menu">
-        <div class="sidebar__menu-item">
-          <a href="search-results.html">
-            <img src="../img/search-icon.svg" alt="search">
-          </a>
-        </div>
-
-        <div class="sidebar__menu-item sidebar__menu-item_active">
-          <a href="profile-personal.html">
-            <img src="../img/user-icon_active.svg" alt="user-profile">
-          </a>
-        </div>
-
-        <div class="sidebar__menu-item">
-          <a href="#">
-            <img src="../img/messages-icon.svg" alt="messages">
-          </a>
-        </div>
-
-        <div class="sidebar__menu-item">
-          <a href="#">
-            <img src="../img/calendar-icon.svg" alt="calendar">
-          </a>
-        </div>
-
-      </nav>
-    </div>
-  </aside>
-
-  <main class="content">
-    <div class="content__wrapper">
-      <section class="container">
-        <div class="container__card">
-
-          <div class="card__titles">
-            <a class="card__title" href="profile-personal.html">PERSONAL INFORMATION</a>
-            <a class="card__title card__title_active" href="#">ACCOUNT INFORMATION</a>
-          </div>
-
-          <div class="card__information">
-
-            <div class="user-data">
-
-              <div class="user-data__item">
-                <h3 class="item__title">USERNAME</h3>
-                <input class="item__input" type="text" name="first name" value="sarahbarnes">
-              </div>
-
-              <div class="user-data__item">
-                <h3 class="item__title">E-MAIL</h3>
-                <input class="item__input" type="text" name="last name" value="sarahbbb@gmail.com">
-              </div>
-
-              <div class="user-data__item-block">
-                <div class="user-data__item user-data__item-flexend">
-                  <a href="#" class="item__link">CHANGE PASSWORD
-                    <img class="item__link-vector" src="../img/Vector.svg" alt="">
-                  </a>
-                </div>
-              </div>
-
+            <div class="user-data__item">
+              <h3 class="item__title">USERNAME</h3>
+              <input class="item__input" type="text" name="first name" value="sarahbarnes">
             </div>
+
+            <div class="user-data__item">
+              <h3 class="item__title">E-MAIL</h3>
+              <input class="item__input" type="text" name="last name" value="sarahbbb@gmail.com">
+            </div>
+
+            <div class="user-data__item-block">
+              <div class="user-data__item user-data__item-flexend">
+                <a href="#" class="item__link">CHANGE PASSWORD
+                  <img class="item__link-vector" src="../img/Vector.svg" alt="">
+                </a>
+              </div>
+            </div>
+
           </div>
         </div>
-      </section>
-    </div>
-  </main>
-</body>
-
-</html>
+      </div>
+    </section>
+  </div>
+</main>
+{% endblock %}

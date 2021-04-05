@@ -1,199 +1,146 @@
-<!DOCTYPE html>
-<html lang="en">
+{% set breadcrumbs__item1 = 'Home' %}
+{% set breadcrumbs__item2 = 'Manage users' %}
+{% set title = 'Admin' %}
+{% extends 'adm-base.html' %}
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Profile</title>
+{% block content%}
 
-  <link rel="stylesheet" href="css/main.css" />
-</head>
+<main class="content">
+  <div class="content__wrapper">
+    <section class="container">
+      <div class="container__inner">
+        <header class="container__search">
+          <img class="container__search-img" src="../img/admin-search.svg" alt="search-icon">
+          <input class="container__search-input" placeholder="Type here to search..." type="text" name="">
+        </header>
 
-<body>
-
-  <header class="header profile-header">
-    <div class="content">
-      <div class="header__inner">
-
-        <div class="breadcrumbs">
-          <ul class="breadcrumbs__items">
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="/'">Home</a>
-            </li>
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link link_active" href="#">Manage users</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="user-list">
-          <img class="user-list__img" src="../img/header-user.png" alt="user">
-          <select>
-            <option>Sarah Freeman</option>
-            <option>Logout</option>
-          </select>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <aside class="sidebar">
-    <div class="sidebar__wrapper">
-
-      <div class="logo sidebar__logo">
-        <img src="../img/side-logo.svg" alt="myFixer" class="logo__image">
-      </div>
-
-      <nav class="sidebar__menu">
-        <div class="sidebar__menu-item sidebar__menu-item_active">
-          <a href="#">
-            <img src="../img/group.svg" alt="users">
-          </a>
-        </div>
-
-      </nav>
-    </div>
-  </aside>
-
-  <main class="content">
-    <div class="content__wrapper">
-      <section class="container">
-        <div class="container__inner">
-          <header class="container__search">
-            <img class="container__search-img" src="../img/admin-search.svg" alt="search-icon">
-            <input class="container__search-input" placeholder="Type here to search..." type="text" name="">
+        <section class="container__database">
+          <header class="container__database-item header-bgcolor">
+            <p class="container__database-header-text">FIRST NAME</p>
+            <p class="container__database-header-text">LAST NAME</p>
+            <p class="container__database-header-text">COUNTRY</p>
+            <p class="container__database-header-text">STATUS</p>
+            <p class="container__database-header-text">LEVEL</p>
+            <p class="container__database-header-text">E-MAIL</p>
           </header>
 
-          <section class="container__database">
-            <header class="container__database-item header-bgcolor">
-              <p class="container__database-header-text">FIRST NAME</p>
-              <p class="container__database-header-text">LAST NAME</p>
-              <p class="container__database-header-text">COUNTRY</p>
-              <p class="container__database-header-text">STATUS</p>
-              <p class="container__database-header-text">LEVEL</p>
-              <p class="container__database-header-text">E-MAIL</p>
-            </header>
-
-            <div class="container__database-items">
-              <div class="container__database-item">
-                <p class="container__database-item-text">Richard</p>
-                <p class="container__database-item-text">Richard</p>
-                <p class="container__database-item-text">Australia</p>
-                <p class="container__database-item-text">Requested</p>
-                <select class="container__database-item-text container__database-item-select">
-                  <option value="bronze">Bronze</option>
-                  <option value="silver">Silver</option>
-                  <option value="gold" selected>Gold</option>
-                </select>
-                <p class="container__database-item-text">rfrome@gmail.com</p>
-                <div class="container__database-item-img">
-                  <img class="" src="../img/remove-usr.svg" alt="remove btn">
-                </div>
-              </div>
-
-              <div class="container__database-item">
-                <p class="container__database-item-text">Tiffany</p>
-                <p class="container__database-item-text">Tiffany</p>
-                <p class="container__database-item-text">Australia</p>
-                <p class="container__database-item-text">Expected</p>
-                <select class="container__database-item-text container__database-item-select">
-                  <option value="bronze">Bronze</option>
-                  <option value="silver">Silver</option>
-                  <option value="gold" selected>Gold</option>
-                </select>
-                <p class="container__database-item-text">rfrome@gmail.com</p>
-                <div class="container__database-item-img">
-                  <img class="" src="../img/remove-usr.svg" alt="remove btn">
-                </div>
-              </div>
-
-              <div class="container__database-item">
-                <p class="container__database-item-text">Richard</p>
-                <p class="container__database-item-text">Richard</p>
-                <p class="container__database-item-text">Australia</p>
-                <p class="container__database-item-text">Completed</p>
-                <select class="container__database-item-text container__database-item-select">
-                  <option value="bronze">Bronze</option>
-                  <option value="silver">Silver</option>
-                  <option value="gold" selected>Gold</option>
-                </select>
-                <p class="container__database-item-text">rfrome@gmail.com</p>
-                <div class="container__database-item-img">
-                  <img class="" src="../img/remove-usr.svg" alt="remove btn">
-                </div>
-              </div>
-
-              <div class="container__database-item">
-                <p class="container__database-item-text">Richard</p>
-                <p class="container__database-item-text">Richard</p>
-                <p class="container__database-item-text">Australia</p>
-                <p class="container__database-item-text">Completed</p>
-                <select class="container__database-item-text container__database-item-select">
-                  <option value="bronze">Bronze</option>
-                  <option value="silver">Silver</option>
-                  <option value="gold" selected>Gold</option>
-                </select>
-                <p class="container__database-item-text">rfrome@gmail.com</p>
-                <div class="container__database-item-img">
-                  <img class="" src="../img/remove-usr.svg" alt="remove btn">
-                </div>
-              </div>
-
-              <div class="container__database-item">
-                <p class="container__database-item-text">Richard</p>
-                <p class="container__database-item-text">Richard</p>
-                <p class="container__database-item-text">Australia</p>
-                <p class="container__database-item-text">Expected</p>
-                <select class="container__database-item-text container__database-item-select">
-                  <option value="bronze">Bronze</option>
-                  <option value="silver">Silver</option>
-                  <option value="gold" selected>Gold</option>
-                </select>
-                <p class="container__database-item-text">rfrome@gmail.com</p>
-                <div class="container__database-item-img">
-                  <img class="" src="../img/remove-usr.svg" alt="remove btn">
-                </div>
-              </div>
-
-              <div class="container__database-item">
-                <p class="container__database-item-text">Richard</p>
-                <p class="container__database-item-text">Richard</p>
-                <p class="container__database-item-text">Australia</p>
-                <p class="container__database-item-text">Completed</p>
-                <select class="container__database-item-text container__database-item-select">
-                  <option value="bronze">Bronze</option>
-                  <option value="silver">Silver</option>
-                  <option value="gold" selected>Gold</option>
-                </select>
-                <p class="container__database-item-text">rfrome@gmail.com</p>
-                <div class="container__database-item-img">
-                  <img class="" src="../img/remove-usr.svg" alt="remove btn">
-                </div>
-              </div>
-
-              <div class="container__database-item">
-                <p class="container__database-item-text">Richard</p>
-                <p class="container__database-item-text">Richard</p>
-                <p class="container__database-item-text">Australia</p>
-                <p class="container__database-item-text">Requested</p>
-                <select class="container__database-item-text container__database-item-select">
-                  <option value="bronze">Bronze</option>
-                  <option value="silver">Silver</option>
-                  <option value="gold" selected>Gold</option>
-                </select>
-                <p class="container__database-item-text">rfrome@gmail.com</p>
-                <div class="container__database-item-img">
-                  <img class="" src="../img/remove-usr.svg" alt="remove btn">
-                </div>
+          <div class="container__database-items">
+            <div class="container__database-item">
+              <p class="container__database-item-text">Richard</p>
+              <p class="container__database-item-text">Richard</p>
+              <p class="container__database-item-text">Australia</p>
+              <p class="container__database-item-text">Requested</p>
+              <select class="container__database-item-text container__database-item-select">
+                <option value="bronze">Bronze</option>
+                <option value="silver">Silver</option>
+                <option value="gold" selected>Gold</option>
+              </select>
+              <p class="container__database-item-text">rfrome@gmail.com</p>
+              <div class="container__database-item-img">
+                <img class="" src="../img/remove-usr.svg" alt="remove btn">
               </div>
             </div>
 
-          </section>
-        </div>
-      </section>
-    </div>
-  </main>
-</body>
+            <div class="container__database-item">
+              <p class="container__database-item-text">Tiffany</p>
+              <p class="container__database-item-text">Tiffany</p>
+              <p class="container__database-item-text">Australia</p>
+              <p class="container__database-item-text">Expected</p>
+              <select class="container__database-item-text container__database-item-select">
+                <option value="bronze">Bronze</option>
+                <option value="silver">Silver</option>
+                <option value="gold" selected>Gold</option>
+              </select>
+              <p class="container__database-item-text">rfrome@gmail.com</p>
+              <div class="container__database-item-img">
+                <img class="" src="../img/remove-usr.svg" alt="remove btn">
+              </div>
+            </div>
 
-</html>
+            <div class="container__database-item">
+              <p class="container__database-item-text">Richard</p>
+              <p class="container__database-item-text">Richard</p>
+              <p class="container__database-item-text">Australia</p>
+              <p class="container__database-item-text">Completed</p>
+              <select class="container__database-item-text container__database-item-select">
+                <option value="bronze">Bronze</option>
+                <option value="silver">Silver</option>
+                <option value="gold" selected>Gold</option>
+              </select>
+              <p class="container__database-item-text">rfrome@gmail.com</p>
+              <div class="container__database-item-img">
+                <img class="" src="../img/remove-usr.svg" alt="remove btn">
+              </div>
+            </div>
+
+            <div class="container__database-item">
+              <p class="container__database-item-text">Richard</p>
+              <p class="container__database-item-text">Richard</p>
+              <p class="container__database-item-text">Australia</p>
+              <p class="container__database-item-text">Completed</p>
+              <select class="container__database-item-text container__database-item-select">
+                <option value="bronze">Bronze</option>
+                <option value="silver">Silver</option>
+                <option value="gold" selected>Gold</option>
+              </select>
+              <p class="container__database-item-text">rfrome@gmail.com</p>
+              <div class="container__database-item-img">
+                <img class="" src="../img/remove-usr.svg" alt="remove btn">
+              </div>
+            </div>
+
+            <div class="container__database-item">
+              <p class="container__database-item-text">Richard</p>
+              <p class="container__database-item-text">Richard</p>
+              <p class="container__database-item-text">Australia</p>
+              <p class="container__database-item-text">Expected</p>
+              <select class="container__database-item-text container__database-item-select">
+                <option value="bronze">Bronze</option>
+                <option value="silver">Silver</option>
+                <option value="gold" selected>Gold</option>
+              </select>
+              <p class="container__database-item-text">rfrome@gmail.com</p>
+              <div class="container__database-item-img">
+                <img class="" src="../img/remove-usr.svg" alt="remove btn">
+              </div>
+            </div>
+
+            <div class="container__database-item">
+              <p class="container__database-item-text">Richard</p>
+              <p class="container__database-item-text">Richard</p>
+              <p class="container__database-item-text">Australia</p>
+              <p class="container__database-item-text">Completed</p>
+              <select class="container__database-item-text container__database-item-select">
+                <option value="bronze">Bronze</option>
+                <option value="silver">Silver</option>
+                <option value="gold" selected>Gold</option>
+              </select>
+              <p class="container__database-item-text">rfrome@gmail.com</p>
+              <div class="container__database-item-img">
+                <img class="" src="../img/remove-usr.svg" alt="remove btn">
+              </div>
+            </div>
+
+            <div class="container__database-item">
+              <p class="container__database-item-text">Richard</p>
+              <p class="container__database-item-text">Richard</p>
+              <p class="container__database-item-text">Australia</p>
+              <p class="container__database-item-text">Requested</p>
+              <select class="container__database-item-text container__database-item-select">
+                <option value="bronze">Bronze</option>
+                <option value="silver">Silver</option>
+                <option value="gold" selected>Gold</option>
+              </select>
+              <p class="container__database-item-text">rfrome@gmail.com</p>
+              <div class="container__database-item-img">
+                <img class="" src="../img/remove-usr.svg" alt="remove btn">
+              </div>
+            </div>
+          </div>
+
+        </section>
+      </div>
+    </section>
+  </div>
+</main>
+{% endblock %}

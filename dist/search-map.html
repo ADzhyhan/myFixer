@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Profile</title>
+  <title>Search</title>
 
   <link rel="stylesheet" href="css/main.css" />
 </head>
@@ -13,121 +13,122 @@
 <body>
 
   <header class="header profile-header">
-    <div class="content">
-      <div class="header__inner">
+  <div class="content">
+    <div class="header__inner">
 
-        <div class="breadcrumbs">
-          <ul class="breadcrumbs__items">
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="/'">Home</a>
-            </li>
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="#">Search</a>
-            </li>
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link link_active" href="#">Results</a>
-            </li>
-          </ul>
-        </div>
-
-        <select>
-          <option>Sarah Freeman</option>
-          <option>Logout</option>
-        </select>
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__items">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="/'">Home</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="search-results.html">Search</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link link_active" href="#">Results</a>
+          </li>
+        </ul>
       </div>
-    </div>
-  </header>
 
+      <select>
+        <option>Sarah Freeman</option>
+        <option>Logout</option>
+      </select>
+    </div>
+  </div>
+</header>
   <aside class="sidebar">
-    <div class="sidebar__wrapper">
+  <div class="sidebar__wrapper">
 
-      <div class="logo sidebar__logo">
-        <img src="../img/side-logo.svg" alt="myFixer" class="logo__image">
+    <div class="logo sidebar__logo">
+      <img src="../img/side-logo.svg" alt="myFixer" class="logo__image">
+    </div>
+
+    <nav class="sidebar__menu">
+      <div class="sidebar__menu-item sidebar__menu-item_active">
+        <a href="search-results.html">
+          <img src="../img/search-icon_active.svg" alt="search">
+        </a>
       </div>
 
-      <nav class="sidebar__menu">
-        <div class="sidebar__menu-item sidebar__menu-item_active">
-          <a href="#">
-            <img src="../img/search-icon_active.svg" alt="search">
-          </a>
-        </div>
+      <div class="sidebar__menu-item ">
+        <a href="profile-personal.html">
+          <img src="../img/user-icon.svg" alt="user-profile">
+        </a>
+      </div>
 
-        <div class="sidebar__menu-item">
-          <a href="profile-personal.html">
-            <img src="../img/user-icon.svg" alt="user-profile">
-          </a>
-        </div>
+      <div class="sidebar__menu-item ">
+        <a href="#">
+          <img src="../img/messages-icon.svg" alt="messages">
+        </a>
+      </div>
 
-        <div class="sidebar__menu-item">
-          <a href="#">
-            <img src="../img/messages-icon.svg" alt="messages">
-          </a>
-        </div>
+      <div class="sidebar__menu-item ">
+        <a href="#">
+          <img src="../img/calendar-icon.svg" alt="calendar">
+        </a>
+      </div>
 
-        <div class="sidebar__menu-item">
-          <a href="#">
-            <img src="../img/calendar-icon.svg" alt="calendar">
-          </a>
-        </div>
+    </nav>
+  </div>
+</aside>
+  
 
-      </nav>
-    </div>
-  </aside>
+<main class="content">
+  <div class="content__wrapper">
+    <section class="container">
+      <div class="search">
 
-  <main class="content">
-    <div class="content__wrapper">
-      <section class="container">
-        <div class="search">
-
-          <div class="search__filter">
-            <div class="search__filter-item">
-              <h3 class="item__title">LOCATION</h3>
-              <select class="item__select" name="location"></select>
-            </div>
-
-            <div class="search__filter-item">
-              <h3 class="item__title">Search</h3>
-              <input class="item__input" type="text" name="search" value="Type your query...">
-            </div>
-
-            <div class="search__filter-item">
-              <h3 class="item__title">Category</h3>
-              <select class="item__select" name="location"></select>
-            </div>
-
-            <div class="search__filter-item">
-              <h3 class="item__title">SERVICE</h3>
-              <select class="item__select" name="location"></select>
-            </div>
-
-            <div class="search__filter-item">
-              <h3 class="item__title">PERIOD</h3>
-              <input class="item__date" type="date" value="2021-02-04" name="period" min="2017-01-01" max="2027-12-31">
-            </div>
-
-            <div class="search__filter-button">
-              <button class="btn search-button">SEARCH</button>
-            </div>
+        <div class="search__filter">
+          <div class="search__filter-item">
+            <h3 class="item__title">LOCATION</h3>
+            <select class="item__select" name="location"></select>
           </div>
 
-          <div class="search__results">
-            <header class="search__header-results">
-              <div class="header-results__title">
-                <a href="search-results.html" class="item__link">SHOW RESULTS</a>
-              </div>
-            </header>
-
-            <div class="search__map">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d20767.170198864806!2d26.9582336!3d49.4108672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1617312810639!5m2!1sen!2sua"
-                width="747" height="436" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
+          <div class="search__filter-item">
+            <h3 class="item__title">Search</h3>
+            <input class="item__input" type="text" name="search" value="Type your query...">
           </div>
 
+          <div class="search__filter-item">
+            <h3 class="item__title">Category</h3>
+            <select class="item__select" name="location"></select>
+          </div>
+
+          <div class="search__filter-item">
+            <h3 class="item__title">SERVICE</h3>
+            <select class="item__select" name="location"></select>
+          </div>
+
+          <div class="search__filter-item">
+            <h3 class="item__title">PERIOD</h3>
+            <input class="item__date" type="date" value="2021-02-04" name="period" min="2017-01-01" max="2027-12-31">
+          </div>
+
+          <div class="search__filter-button">
+            <button class="btn search-button">SEARCH</button>
+          </div>
         </div>
-      </section>
-    </div>
-  </main>
+
+        <div class="search__results">
+          <header class="search__header-results">
+            <div class="header-results__title">
+              <a href="search-results.html" class="item__link">SHOW RESULTS</a>
+            </div>
+          </header>
+
+          <div class="search__map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d20767.170198864806!2d26.9582336!3d49.4108672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1617312810639!5m2!1sen!2sua"
+              width="747" height="436" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </div>
+</main>
+
 </body>
 
 </html>
